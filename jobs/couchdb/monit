@@ -1,0 +1,5 @@
+check process couchdb
+  with pidfile /var/vcap/sys/run/couchdb/couchdb.pid
+  start program "/var/vcap/jobs/couchdb/bin/monit_debugger couchdb_ctl '/var/vcap/jobs/couchdb/bin/couchdb_ctl start'"
+  stop program "/var/vcap/jobs/couchdb/bin/monit_debugger couchdb_ctl '/var/vcap/jobs/couchdb/bin/couchdb_ctl stop'"
+  group vcap

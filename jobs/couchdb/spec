@@ -1,0 +1,13 @@
+---
+name: couchdb
+packages: []
+templates:
+  bin/monit_debugger: bin/monit_debugger
+  bin/couchdb_ctl: bin/couchdb_ctl
+  config/couchdb.conf.erb: config/couchdb.conf
+  data/properties.sh.erb: data/properties.sh
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh
+properties:
+  couchdb.leader_address:
+    description: Hostname/IP to the leader/master of the cluster
