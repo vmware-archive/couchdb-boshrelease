@@ -3,6 +3,6 @@ blobstore:
   provider: s3
   options:
     bucket_name: couchdb-boshrelease
-    access_key_id: READONLY_AWS_ACCESS_KEY
-    secret_access_key: READONLY_AWS_SECRET_ACCESS_KEY
-    encryption_key: PERSONAL_RANDOM_KEY
+    access_key_id: AKIAIS3JOKWFRRYXOYKQ
+    secret_access_key: 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
+    encryption_key: mysecretkey

@@ -1,1 +1,31 @@
---- {}
+---
+autoconf/autoconf-2.13.tar.gz:
+  object_id: 68003649-a6a3-456e-a8b1-c5031d6d5d18
+  sha: !binary |-
+    ZTQ4MjZjOGJkODUzMjUwNjc4MThmMTliMmIyYWQyYjYyNWRhNjZmYw==
+  size: 443844
+couchdb/apache-couchdb-1.5.0.tar.gz:
+  object_id: d3c0d107-3197-467c-8dfd-b43d1fc53447
+  sha: !binary |-
+    MjgzZTRiYmQ0ZjE3MjdiYjMzNGE2N2QyZjk4OGE3ZDQxMjUyM2JlZg==
+  size: 11594978
+erlang/otp_src_R16B03-1.tar.gz:
+  object_id: 5949984f-1327-441e-b54b-c2e1c7b0d580
+  sha: !binary |-
+    YzI2MzRlYTBjMDc4NTAwZjFjNmExMzY5ZjRiZTU5YTZkMTQ2NzNlMA==
+  size: 66253556
+icu/icu4c-52_1-src.tgz:
+  object_id: 52e9b47e-97d1-459b-9b52-f256cfc1d120
+  sha: !binary |-
+    NmRlNDQwYjcxNjY4ZjFhNjVhOTM0NGNkYWY3YTQzNzI5MTQxNjc4MQ==
+  size: 23875368
+python/Python-2.7.6.tgz:
+  object_id: 82767944-947c-4027-9117-93c809e9e1ca
+  sha: !binary |-
+    ODMyOGQ5ZjFkNTU1NzRhMjg3ZGYzODRmNDkzMWEzOTQyZjAzZGE2NA==
+  size: 14725931
+spidermonkey/js185-1.0.0.tar.gz:
+  object_id: 3d17d106-28c1-4a93-a9df-5cfb6c2a18c0
+  sha: !binary |-
+    NTJhMDE0NDljNDhkN2ExMTdiMzVmMjEzZDNlNDI2MzU3OGQ4NDZkNg==
+  size: 6164605

@@ -1,0 +1,7 @@
+---
+name: spidermonkey
+dependencies:
+- autoconf
+- python
+files:
+- spidermonkey/js185-1.0.0.tar.gz

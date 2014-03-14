@@ -1,0 +1,25 @@
+set -e # exit immediately if a simple command exits with a non-zero status
+set -u # report the usage of uninitialized variables
+
+# Detect # of CPUs so make jobs can be parallelized
+CPUS=$(grep -c ^processor /proc/cpuinfo)
+ # Available variables
+# $BOSH_COMPILE_TARGET - where this package & spec'd source files are available
+# $BOSH_INSTALL_TARGET - where you copy/install files to be included in package
+export HOME=/var/vcap
+
+
+PATH=/var/vcap/packages/spidermonkey/bin:$PATH
+PATH=/var/vcap/packages/erlang/bin:$PATH
+PATH=/var/vcap/packages/icu/bin:$PATH
+
+
+export JS_CFLAGS="-I/var/vcap/packages/spidermonkey/include/js"
+export JS_LIBS="-L/var/vcap/packages/spidermonkey/lib -lmozjs185  -ldl  -lm -ldl"
+
+tar xfv couchdb/apache-couchdb-1.5.0.tar.gz
+cd apache-couchdb-1.5.0
+./configure --prefix=${BOSH_INSTALL_TARGET}
+make -j${CPUS} && make install
+# Alternatively, to copy archive contents:
+# cp -a apache-couchdb-1.5.0/* $BOSH_INSTALL_TARGET

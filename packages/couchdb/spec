@@ -1,0 +1,8 @@
+---
+name: couchdb
+dependencies:
+- spidermonkey
+- erlang
+- icu
+files:
+- couchdb/apache-couchdb-1.5.0.tar.gz

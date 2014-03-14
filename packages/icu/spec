@@ -1,0 +1,5 @@
+---
+name: icu
+dependencies: []
+files:
+- icu/icu4c-52_1-src.tgz
