@@ -1,3 +1,5 @@
+# couchdb-boshrelease is no longer actively maintained by VMware.
+
 # BOSH Release for couchdb
 
 ## Usage
